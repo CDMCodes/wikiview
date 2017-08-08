@@ -1,0 +1,25 @@
+/w/api.php?action=query&format=json&prop=info%7Cextracts&indexpageids=1&iwurl=1&titles=Rick+and+Morty&inprop=url&exchars=140&exintro=1
+
+{
+    "batchcomplete": "",
+    "query": {
+        "pages": {
+            "41185040": {
+                "pageid": 41185040,
+                "ns": 0,
+                "title": "Rick and Morty",
+                "contentmodel": "wikitext",
+                "pagelanguage": "en",
+                "pagelanguagehtmlcode": "en",
+                "pagelanguagedir": "ltr",
+                "touched": "2017-08-08T08:00:04Z",
+                "lastrevid": 794475168,
+                "length": 50874,
+                "fullurl": "https://en.wikipedia.org/wiki/Rick_and_Morty",
+                "editurl": "https://en.wikipedia.org/w/index.php?title=Rick_and_Morty&action=edit",
+                "canonicalurl": "https://en.wikipedia.org/wiki/Rick_and_Morty",
+                "extract": "<p><i><b>Rick and Morty</b></i> is an American adult animated science-fiction sitcom created by Justin Roiland and Dan Harmon for Cartoon Network..."
+            }
+        }
+    }
+}

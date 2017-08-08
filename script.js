@@ -3,12 +3,19 @@ $(document).ready(function(){
   $(".warn").hide();
   //declare function for API call
   function wikipediaCall(){
-    basestring = "https://en.wikipedia.org/w/api.php?action=query&format=json&prop=info%7Cextracts&indexpageids=1&iwurl=1&inprop=url%7Cdisplaytitle&exchars=140&exintro=1"
+    basestring = "https://en.wikipedia.org/w/api.php?action=query&format=json&prop=info%7Cextracts&iwurl=1&inprop=url%7Cdisplaytitle&exchars=140&exintro=1"
     srchrequest = "titles="+$("#search").text();
     qrystring = basestring + srchrequest;
     $.getJSON(qrystring,function(result){
       //console.log(result);
       //do something with returned API data
+        //grab query.pages
+        console.log(results.query.pages[0]);
+        //for each page
+          //add div container
+          //write page title
+          //link to page URL
+          //write extract below title
     });
   }
 
@@ -20,7 +27,7 @@ $(document).ready(function(){
 
     var srchtext = $("#search").val();
 
-    //add message when search field is blank
+    //show warning when search field is blank
     if(srchtext == ""){
       $(".warn").show();
     }else{
