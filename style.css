@@ -15,3 +15,8 @@ a:hover {
 a:visited {
   color: inherit;
 }
+
+.warn {
+  color: red;
+  font-style:italic;
+}
