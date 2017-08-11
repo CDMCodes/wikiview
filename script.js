@@ -14,11 +14,22 @@ $(document).ready(function(){
         //grab query.pages
         console.log(result.query.pages);
         pages = result.query.pages;
-        console.log(pages[0]); //can't call object by index, need name...but won't know names ahead of time...
-        //for each page
+        //create array of all the keys in pages
+        var keys =[]
+        for(var key in pages){
+          keys.push(key);
+        }
+        console.log(keys);
+        console.log(pages[keys[0]]);
+        for(i=0;i<keys.length;i++){
+          // console.log(pages[keys[i]]);
           //add div container with title, URL, and extract
-          // content = "<div class=result><a target='_blank' href=" + pages.fullurl + ">" + pages.displaytitle + "</a>" + pages.extract + "</div>";
-          // $("footer").before(content);
+          var target = pages[keys[i]];
+          var content = "<div class=result><a target='_blank' href=" + target.fullurl + ">" + target.displaytitle + "</a>" + target.extract + "</div>";
+          $("footer").before(content);
+        }
+        //for each page
+
 
 
     });
@@ -38,14 +49,10 @@ $(document).ready(function(){
     }else{
       //grab search value replace spaces with '+' and remove punctuation
       srchtext = srchtext.replace(/\s/g,'+').replace(/[^\w\+]/g,'');
-      console.log("search query = " + srchtext);
+      //console.log("search query = " + srchtext);
       wikipediaCall(srchtext);
     }
 
-
-
-
-    //execute API call with search string
   })
 
 });
