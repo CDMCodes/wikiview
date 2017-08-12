@@ -22,7 +22,7 @@ $(document).ready(function(){
         for(i=0;i<keys.length;i++){
           var target = pages[keys[i]];
           var content = "<div class=result><a target='_blank' href=" + target.fullurl + ">" + target.displaytitle + "</a>" + target.extract + "</div>";
-          $("footer").before(content);
+          $("#contentbox").append(content);
         }
     });
   }

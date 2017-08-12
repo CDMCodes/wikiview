@@ -15,6 +15,28 @@ footer {
   text-align: center;
 }
 
+button{
+  background: lightgray;
+  border: none;
+  border-radius: 2px;
+  padding: 2%;
+  margin: 1%;
+}
+
+button:hover{
+  background:grey;
+  color:white;
+  font-weight:bold;
+}
+
+
+form {
+  text-align: center;
+  padding: 2%;
+  width: 100%
+  margin: 0 auto;
+}
+
 .warn {
   color: red;
   font-style:italic;
@@ -22,29 +44,38 @@ footer {
   display:block;
 }
 
-.contentbox {
-  margin: 0 auto;
-  max-width: 500px;
-  width: 300px;
-  text-align: center;
-  background-color: white;
-}
-
-.randbox {
-  text-align: center;
-  background-color:blue;
-}
-
-form {
-  text-align: center;
-  padding: 2%
-}
-
-
 .result {
   background-color: #ededed;
   border-radius: 2px;
   text-align: center
 }
+
+.result a {
+  font-weight: bold;
+}
+
+.result p {
+  font-size: .9em;
+}
+
+#contentbox {
+  margin: 0 auto;
+  max-width: 500px;
+  width: 300px;
+  text-align: center;
+  background-color: white;
+  padding: 1%;
+}
+
+#randbox {
+  text-align: center;
+  width: 100%;
+  margin: 0 auto;
+}
+
+
+
+
+
 
 /*@media (min-width: 500px)*/
