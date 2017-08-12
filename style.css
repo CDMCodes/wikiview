@@ -1,22 +1,50 @@
-
-a {
-  text-decoration: none;
-  border: 1px solid black
-  border-radius: 2px;
-  background-color: lightgrey;
+body {
+  font-family: 'Playfair Display', serif;
+  background-color: #eeefdc;
 }
 
-a:hover {
-  background-color: darkgrey;
-  color: white;
-  border: 2px solid white;
+p {
+  display: inline-block;
 }
 
-a:visited {
-  color: inherit;
+footer {
+  background-color: white;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
 }
 
 .warn {
   color: red;
   font-style:italic;
+  clear: both;
+  display:block;
 }
+
+.contentbox {
+  margin: 0 auto;
+  max-width: 500px;
+  width: 300px;
+  text-align: center;
+  background-color: white;
+}
+
+.randbox {
+  text-align: center;
+  background-color:blue;
+}
+
+form {
+  text-align: center;
+  padding: 2%
+}
+
+
+.result {
+  background-color: #ededed;
+  border-radius: 2px;
+  text-align: center
+}
+
+/*@media (min-width: 500px)*/

@@ -4,19 +4,24 @@
   <meta charset = "utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="style.css" type="text/css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
   <title>Wiki Viewer</title>
 </head>
 <body>
-  <p>Press here for a random article</p>
-  <a href="https://en.wikipedia.org/wiki/Special:Random" target="_blank">Random</a>
+  <div id="contentbox">
+    <div id="randbox">
+    <p>Press here for a random article</p>
+    <a href="https://en.wikipedia.org/wiki/Special:Random" target="_blank">
+      <button>Random</button></a>
+    </div>
 
-  <form id="srchform">
-    <p class='warn'>Please enter search text</p>
-    <label for="search">Search:</label>
-    <input type="text" id="search">
-    <button id="submit">Search</button>
-  </form>
-
+    <form id="srchform">
+      <p class='warn'>Please enter search text</p>
+      <label for="search">Search:</label>
+      <input type="text" id="search">
+      <button id="submit">Search</button>
+    </form>
+  </div>
 
   <footer>Part of the <a href="www.freecodecamp.org">freeCodeCamp.org</a> curriculum.
   Results from Wikipedia.org API</footer>
