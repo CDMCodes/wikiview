@@ -6,13 +6,12 @@ body {
 
 p {
   display: inline-block;
-  font-size: .8em;
+  font-size: 1em;
 }
 
 h1 {
   font-size: 1.85em;
 }
-
 
 footer {
   background-color: white;
@@ -29,7 +28,7 @@ button{
   border-radius: 2px;
   padding: 2%;
   margin: 1%;
-  font-size: 1.25em;
+
 }
 
 button:hover{
@@ -38,13 +37,17 @@ button:hover{
   font-weight:bold;
 }
 
-
 form {
   text-align: center;
   padding: 2%;
   width: 100%;
   margin: 0 auto;
-  font-size: .8em;
+  font-size: 1em;
+}
+
+input{
+  width: 50%;
+  height: 2em;
 }
 
 input::placeholder{
@@ -99,19 +102,33 @@ input::placeholder{
   border-radius: 4px;
 }
 
-@media (min-width: 400px) {
-  p {
-    font-size: 1.5em;
-  }
-  button {
-    font-size:1.0em;
-  }
-}
+
 @media (min-width: 600px) {
   p {
     font-size: 2em;
   }
-  button{
+  h1 {
+    font-size: 3em;
+  }
+  .result{
+    font-size: 2em;
+  }
+  .result a {
     font-size: 1.25em;
+  }
+  .result p {
+    font-size: 1.25em;
+  }
+  .warn {
+    font-size: 1.75em;
+  }
+  form {
+    font-size: 2em;
+  }
+  input::placeholder{
+    font-size: 1.75em;
+  }
+  button{
+    font-size: 1.5em;
   }
 }
