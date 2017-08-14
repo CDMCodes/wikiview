@@ -1,17 +1,24 @@
 body {
   font-family: 'Playfair Display', serif;
-  background-color: #eeefdc;
+  /*background-color: #eeefdc;*/
+  background-color: #778899;
 }
 
 p {
   display: inline-block;
-  font-size: .9em;
+  font-size: .8em;
 }
+
+h1 {
+  font-size: 1.85em;
+}
+
 
 footer {
   background-color: white;
   position: fixed;
   bottom: 0;
+  left: 0;
   width: 100%;
   text-align: center;
 }
@@ -22,7 +29,7 @@ button{
   border-radius: 2px;
   padding: 2%;
   margin: 1%;
-  font-size: .9em;
+  font-size: 1.25em;
 }
 
 button:hover{
@@ -35,8 +42,13 @@ button:hover{
 form {
   text-align: center;
   padding: 2%;
-  width: 100%
+  width: 100%;
   margin: 0 auto;
+  font-size: .8em;
+}
+
+input::placeholder{
+  font-size: .75em;
 }
 
 .warn {
@@ -47,9 +59,12 @@ form {
 }
 
 .result {
-  background-color: #ededed;
+  background-color: #bbc3cc;
   border-radius: 2px;
-  text-align: center
+  text-align: center;
+  box-shadow: 5px 5px 2px 2px #969292;
+  padding: 2px;
+  display: none;
 }
 
 .result a {
@@ -63,16 +78,25 @@ form {
 #contentbox {
   margin: 0 auto;
   max-width: 800px;
-  width: 75%;
+  width: 85%;
   text-align: center;
   background-color: white;
-  padding: 1%;
+  padding: 5%;
+  border-radius: 5px;
 }
 
 #randbox {
   text-align: center;
   width: 100%;
   margin: 0 auto;
+  clear:both;
+}
+
+#pythia{
+  /*height: 30%;*/
+  width: 30%;
+  float: left;
+  border-radius: 4px;
 }
 
 @media (min-width: 400px) {

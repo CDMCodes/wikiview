@@ -23,6 +23,9 @@ $(document).ready(function(){
           var target = pages[keys[i]];
           var content = "<div class=result><a target='_blank' href=" + target.fullurl + ">" + target.displaytitle + "</a>" + target.extract + "</div>";
           $("#contentbox").append(content);
+          $(".result").show("slow");
+          $("img").animate({opacity:0.25},250,function(){});
+          $("img").animate({opacity:1},250,function(){});
         }
     });
   }
